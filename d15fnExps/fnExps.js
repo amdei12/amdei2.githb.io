@@ -13,7 +13,7 @@ function times100(num){
   function myMap(func,arr){
       let newarr=[];
       for(let i=0;i<arr.length;i++){
-          newarr[i]=fumc(arr[i])
+          newarr[i]=func(arr[i])
       }
       return newarr;
       
