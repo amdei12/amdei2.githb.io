@@ -6,7 +6,8 @@ function ReversArray(arr){
     let b=[]
     let n=0;
     for(let i=arr.length-1;i>=0;i--){
-         b[n]=arr[i];
+         let x=arr[i];
+         b[n]=x;
          n++;
     }
     a=b;
