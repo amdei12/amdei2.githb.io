@@ -15,7 +15,7 @@ const times100 = imports.times100;
 
 /* 1.	1.	Write a function, double, that takes a number and returns 2 times the number..  */
 describe("double", function () {
-    it("tests double 10", function () {
+    it("tests double 10", function () {''
         assert.strictEqual(double(10), 20);
     });
     it("tests double 0", function () {

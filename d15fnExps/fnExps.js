@@ -8,12 +8,11 @@ module.exports = {double, times100, myMap }
   
 
   
-  function myMap(arr,double){
-      let x=null;
-    if(double(num)!=null){
-        x=double(num);
-        arr[arr.length]=x;
-    }
-    
-    return arr;
+  function myMap(func,arr){
+      let newarr=[];
+      for(let i=0;i<arr.length;i++){
+          newarr[i]=fumc(arr[i])
+      }
+      return newarr;
+      
 }
