@@ -1,12 +1,19 @@
 module.exports = {double, times100, myMap }
-  function double(num){
-      return num*2;
-  }
 
-  function times100(num){
-      return num*100;
-  }
-  function myMap(arr){
-      arr[arr.length]=double(num);
-      arr[arr.length]=times100(num);
-  }
+  let double = (num) => 2*num;
+
+
+  let times100 = (num)=>num*100;
+  
+  
+
+  
+  function myMap(arr,double){
+      let x=null;
+    if(double(num)!=null){
+        x=double(num);
+        arr[arr.length]=x;
+    }
+    
+    return arr;
+}
