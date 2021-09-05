@@ -1,9 +1,11 @@
 module.exports = {double, times100, myMap }
+function double(num){
+    return 2*num;
+}
 
-  let double = (num) => 2*num;
-
-
-  let times100 = (num)=>num*100;
+function times100(num){
+    return num*100;
+}
   
   
 
