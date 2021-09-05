@@ -11,7 +11,7 @@ function times100(num){
 
   
   function myMap(func,arr){
-      let newarr=[];
+      const newarr=new Array(arr.length);
       for(let i=0;i<arr.length;i++){
           newarr[i]=func(arr[i])
       }
