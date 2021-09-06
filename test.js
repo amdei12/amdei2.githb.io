@@ -18,13 +18,5 @@ function times100(num){
       return newarr;
       
 }
-let myMap=function(func,arr) {
-    let newarr=[];
-      for(let i=0;i<arr.length;i++){
-          newarr[i]=func(arr[i])
-      }
-      return newarr;
-      
-    
-}
-    
+let a=[1,2,3,4];
+console.log(myMap(double,a));
