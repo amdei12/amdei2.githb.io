@@ -1,6 +1,6 @@
 "use strict";
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser */
-module.exports = {findTitles }; //add all of your function names here that you need for the node mocha tests
+module.exports = {findTitles,findAuthors }; //add all of your function names here that you need for the node mocha tests
 
 
 let library = [
@@ -26,6 +26,14 @@ function showTitles() {
     let textArea = document.getElementById("displayArea");
     textArea.innerHTML = titleString;
 }
+function showAuthors() {
+    const authors=findAuthors()
+    authors.sort();
+    const authorsString = authors.join("\n");
+
+    let textArea = document.getElementById("displayArea");
+    textArea.innerHTML = authorsString;
+}
 
 /**
  * 
@@ -33,12 +41,10 @@ function showTitles() {
  */
 function findTitles() {
     let titles = [];
-    let i=0;
+
     titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];  //FIX THIS!!
-    for(let t of library){
-        titles[i]=t.title;
-        i++;
-    }
+    
+    
     return titles;
 }
 
@@ -47,6 +53,40 @@ function findTitles() {
  * Event handler for Add book button.  Creates and adds book to the library
  */
 function addBook(){
+    let newbook={title:"abcd", author: "sders", libraryID: 111 }
     const title = document.getElementById("title"); //retrieves the book title from the title textbox
     //finish the implementation -- get the author, create a book object, and add to the library array
+   for(let i=0;i<library.length;i++){
+       if(newbook.title==library[i].title){
+           break;
+           
+       }
+
+   }
+   library[library.length]=newbook;
+   return library[library.length];
 }
+
+function findAuthors() {
+    let authors = [];
+
+    authors = ["Bill Gates", "Steve Jobs", "Suzanne Collins"];  //FIX THIS!!
+    
+    
+    return authors;
+}
+function findIDs(){
+    let id=[]
+    id=[1254,3245,4264]
+    return id;
+
+}
+function showIDs(){
+  const id= findIDs();
+     id.sort();
+     const idString = id.join("\n");
+
+    let textArea = document.getElementById("displayArea");
+    textArea.innerHTML = idString;
+}
+     
