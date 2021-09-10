@@ -1,8 +1,10 @@
- let arr=[1,2,3,4,5,6,7];
-// arr.forEeach(function (item,index,array){
-//   console.log(index,array)});
-
-
-
-
-let result=arr.filter(item=>item%2==0)
+ 
+function perimeter(){ 
+    console.log(this);   
+    return 4 ;
+} 
+       const shape = {side: 5,  perimeter: perimeter}; 
+       shape.perimeter();
+       console.log("********************************");
+       const myPerim =new shape; 
+myPerim(); 
