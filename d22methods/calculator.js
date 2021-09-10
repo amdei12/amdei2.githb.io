@@ -1,6 +1,19 @@
 "use strict";
 
-const calculator = {};  // implement this
+const calculator = {
+    a:2,
+    b:3,
+    setValues(a, b){},
+
+    sum(){
+   return this.a+this.b;
+    },
+    mul(){
+        return this.a*this.b;
+    }
+
+    }
+
 
 
 

@@ -1,0 +1,51 @@
+const bank = {
+    transactionsDB: [],
+};
+bank.transactionsDB = [
+    { customerId: 1, customerTransactions: [10, 50, -40] },
+    { customerId: 2, customerTransactions: [10, 10, -10] },
+    { customerId: 3, customerTransactions: [5, -5, 55] }];
+
+
+// bank.saveTransaction = function (id, amount) {
+//     const customer = bank.transactionsDB.find(customer => customer.customerId === id);
+//     customer.customerTransactions.push(amount);
+
+// };
+
+// bank.debit = function (id, amount) {
+//     /* make sure current balance is > amount */
+// //IMPLEMENT THIS
+// };
+
+// bank.credit = function (id, amount) {
+//     const balance = this.getBalance(id);
+//     balance.balance += amount;
+//     this.saveTransaction(id, amount);
+// }
+
+// bank.getBalance = function (id) {
+// //IMPLEMENT THIS
+// };
+
+
+
+/**
+ * @returns {number}  returns sum of all balances
+ */
+bank.bankBalance = function () {
+    let total=0;
+for(let key of bank.transactionsDB){
+    for(let a in key){
+      total+=+(key[a]);
+      
+        }
+    }
+
+return  total;
+};
+
+console.log("total balance should be 85: ", bank.bankBalance());
+//bank.credit(1, 20);
+//bank.debit(1, 1000);
+console.log("total should now be 105: ", bank.bankBalance());
