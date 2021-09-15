@@ -30,15 +30,36 @@
 // return grad;
 // }
 // console.log(result(arr,answer));
-const gradeReport = { s101: 3, s102: 2, s103: 3 }; 
- function calaava(num){
-     let count=0;
-     let mark=0;
-     for(let key in num){
-    sum+=key;
-    count++
-     }
- return sum/count;
+// const gradeReport = { s101: 3, s102: 2, s103: 3 }; 
+//  function calaava(num){
+//      let count=0;
+//      let mark=0;
+//      for(let key in num){
+//     sum+=key;
+//     count++
+//      }
+//  return sum/count;
+    
+// }
+// console.log(calaava(gradeReport));
+
+// 
+
+function factrl(n)
+x=1;
+if(n==1){
+    return x;
+
+}
+else{
+    return n*factrl(n-1)
+}
+
+function fact(n) {
+    let x=1
+    while(n!=0){
+        x*n
+        n=n-1;
+    }
     
 }
-console.log(calaava(gradeReport));

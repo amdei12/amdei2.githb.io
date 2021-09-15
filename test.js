@@ -30,3 +30,13 @@
 // let result=arr.reduce((product,currret)=>product*currret);
 // console.log(result);
 
+let a=[1,2,3,4,5,6,7,8,9,]
+function ranfg(arr,a,b){
+let m=arr.filter(function(val){
+  if((val>a)&&(val<b)){
+      return val;
+  }
+});
+return m;
+}
+console.log(ranfg(a,4,7));
