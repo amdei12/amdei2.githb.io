@@ -27,11 +27,11 @@ let node1 = {
     children:  [node2, node3], 
     value: null, 
 }
-
+ 
 let LinkedList=function(){
     let head=null;
     let length=0;
-
+ 
     this.add=function(n){
         if(head==null){
             head=n;
@@ -45,8 +45,7 @@ let LinkedList=function(){
         }
         return n;
     }
-
-
+ 
 }
  list= new LinkedList();
  list.add(node3);
@@ -54,8 +53,7 @@ let LinkedList=function(){
  list.add(node5);
  list.add(node2);
  list.add(node1);
-
-
+ 
  function allnode(n){
      head=current;
      if(current==null){
