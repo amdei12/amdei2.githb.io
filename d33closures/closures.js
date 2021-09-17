@@ -11,17 +11,16 @@ module.exports = {inArray, inBetween, byField, makeArmy }; //add all of your fun
  * 
  */
 function inArray(arr) {
-    let result=true
+    
   let x=arr.length
-        ((x)=>{
+       return ((x)=>{
             if(x>0){
-                result= true
+                return true
             }else {
-                result=false;
+                return false;
             }
         });
-        return result;
-    
+        
     }
 
 let arr=[1,2,3,4]
@@ -37,11 +36,9 @@ let arr=[1,2,3,4]
  */
 function inBetween(low, high) {
     
-    function infun(){
-        let b=arr;
-  return b.filter(key=>key>low&&key<high?key:null)
-    }
-    return infun();
+    return (()=> arr.filter(key=>key>low&&key<high?key:null));
+    
+  
 }
 
 
