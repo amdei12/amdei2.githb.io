@@ -47,16 +47,22 @@ function inBetween(low, high) {
  * @param {String} fieldName is a property on object to be sorted
  * @returns {Function} sorting function
  */
-function byField(fieldName){
-    return arr.sort(function(key1,key2){
-        if(key1.fieldName>key2.fieldName){
-          return 1;
-        }else{
-          return 1;
-        }
-      })
+
+function comper (arr){
+  if(arr[0].fieldName>arr[1].fieldName){
+    return 1;
+
+  }else 
+  {
+    return -1;
+  }
 
 }
+function byField(fieldName){
+    return arr.sort(comper(nameSortedAnswer, nameSortedKey));
+}
+        
+
 
 
 /**
