@@ -37,8 +37,22 @@
 //  }
 //  console.log(allnode(list.name));
 
-let A=[1,2,3,4,5];
-b=[...A]
-console.log(b);
-copyofA=C;
-console.log(C);
+// let A=[1,2,3,4,5];
+// b=[...A]
+// console.log(b);
+// copyofA=C;
+// console.log(C);
+ 
+function sumOfSquares(num,i,sum){
+  
+    if(sum>=num){
+        return  sum
+    }else{
+        return  (sum+i*i)+sumOfSquares(num,i+1);
+
+      
+         
+        
+    }
+}
+console.log(sumOfSquares(14,1,0));
