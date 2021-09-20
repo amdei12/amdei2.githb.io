@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "..\\.git"
+		},
+		{
+			"path": "..\\.vscode"
+		},
+		{
+			"path": "..\\d14arrays"
+		},
+		{
+			"path": "..\\d15fnExps"
+		},
+		{
+			"path": "..\\d21objects"
+		},
+		{
+			"path": "..\\d22methods"
+		},
+		{
+			"path": "..\\d24arrayMethods"
+		},
+		{
+			"path": "..\\d25destructure"
+		},
+		{
+			"path": "..\\d31recursion"
+		},
+		{
+			"path": "..\\d32recursiveStructures"
+		},
+		{
+			"path": "..\\d34scheduledCallbacks"
+		},
+		{
+			"path": "..\\mocha-test"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": ".git"
+	}
+}
