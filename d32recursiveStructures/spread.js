@@ -7,14 +7,18 @@
 
 
 function copyArray(arr){
+    let x={...arr};
+    return x;
 
 }
 
 function concat(arr1, arr2){
-
+  let c=concat(arr1,arr2);
+  return c;
 }
 
 function findMin(...numbers) {
+   return  Min(...numbers)
 
 }
 
