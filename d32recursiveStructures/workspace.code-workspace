@@ -28,7 +28,7 @@
 			"path": "..\\d31recursion"
 		},
 		{
-			"path": "..\\d32recursiveStructures"
+			"path": "."
 		},
 		{
 			"path": "..\\d34scheduledCallbacks"
@@ -37,7 +37,7 @@
 			"path": "..\\mocha-test"
 		},
 		{
-			"path": "."
+			"path": "..\\study"
 		}
 	]
 }
